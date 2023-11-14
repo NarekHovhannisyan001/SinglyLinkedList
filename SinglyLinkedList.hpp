@@ -1,7 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
 
-// #include <iostream>
+#include <iostream>
 
 template <typename T>
 class List {
@@ -15,8 +15,12 @@ public:
     void print() const;
     void push_front(const T& value);
     void pop_front();
-    void print();
+    void push_back(const T& val);
+    void pop_back();
+    bool find(const T& val) const;
     void clear();
+    T& operator[](size_t index);
+    const T& operator[](size_t index) const;
 
 private:
     struct Node
