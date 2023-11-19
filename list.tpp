@@ -311,7 +311,7 @@ bool List<T>::iterator::operator!=(const iterator &other) const
 template <class T>
 List<T>::iterator List<T>::begin() const
 {
-    return iterator(head);
+    return iterator(m_head);
 }
 
 template <class T>
